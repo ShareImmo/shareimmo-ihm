@@ -1,0 +1,81 @@
+.navbar-brand{
+    width: 20%;
+    height: 20%;
+}
+.navbar-nav a.nav-link {
+    color : #324393;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+
+.navbar-nav a.nav-link:hover {
+    color: #ff5757; 
+}
+
+.navbar-nav .nav-link {
+  margin-right: 20px; /* Ajustez cette valeur selon vos besoins */
+}
+
+  /* Pour éviter d'ajouter de l'espace après le dernier lien */
+.navbar-nav .nav-link:last-child {
+  margin-right: 0;
+}
+
+.btn{
+    margin: 1%;
+}
+
+#cnx{
+    background-color: #ff5757;
+    border: #ff5757;
+    margin: 1% 6% 1% 1%;
+}
+
+nav{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#img1{
+    width: 90%;
+    float: right;
+}
+
+.Bigtitle1{
+    color: #324393;
+    font-weight: bold;
+}
+
+.colored-ff5757{
+    color :#ff5757;
+    font-family: sans-serif;
+}
+
+.colored-324393{
+    color :#324393;
+    font-family: sans-serif;
+}
+
+#div1{
+    padding: 2%; 
+}
+
+#div2{
+    background-color: #324393;
+    padding: 2%;
+}
+
+li{
+    list-style: none;
+    padding: 2%;
+}
+
+
+/***** p2 *******/
+.image-link {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
