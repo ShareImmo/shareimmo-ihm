@@ -1,5 +1,6 @@
 import React from 'react';
 import './accueil.css';
+import { Link } from 'react-router-dom';
 import resizedS from './images/resizedS.png';
 import back1 from './images/back1.png';
 import choix from './images/choix.png';
@@ -10,7 +11,8 @@ import invSeul from './images/invSeul.png';
 import up2 from './images/up2.png';
 
 
-const AccueilComponent = () => {
+
+export const AccueilComponent = () => {
   const navbarBrandStyle = {
     width: '200px',
     marginLeft: '10%',
@@ -21,6 +23,10 @@ const AccueilComponent = () => {
     backgroundColor: 'white',
     borderColor: '#ff5757',
   };
+
+  const LinkStyle = {
+    textDecoration: 'none',
+  }
 
   const textCenterStyle = {
     textAlign: 'center',
@@ -110,30 +116,10 @@ const AccueilComponent = () => {
     padding: '2%',
   };
 
-
+  const combinedStyles = { ...LinkStyle, ...colorWhite};
   return (
     
-      <body>
-        <nav class="navbar navbar-expand-lg bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img style={navbarBrandStyle} src={resizedS} alt="Logo ShareImmo"/></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Nos prjets</a>
-                <a class="nav-link" href="#">Notre modèle</a>
-                <a class="nav-link" href="#">ShareImmo Blog.</a>
-                <a class="nav-link" href="#">À propos</a>
-                <a class="nav-link" href="#">Contact</a>
-                <a class="nav-link" href="#">FAQ.</a>
-              </div>
-            </div>
-            <button type="button" class="btn btn-custom" style={buttonStyle}>Inscription</button>
-            <button type="button" class="btn btn-primary" id="cnx">Connexion</button>
-          </div>
-        </nav>
+      <div>
         <br/>
         <br/>
         <div class="container">
@@ -269,8 +255,6 @@ const AccueilComponent = () => {
             © 2023 ShareImmo
           </p>
         </footer>
-      </body>
+      </div>
   );
 };
-
-export default AccueilComponent;

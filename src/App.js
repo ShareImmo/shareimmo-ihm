@@ -1,9 +1,15 @@
 import './accueil.css';
-import AccueilComponent from './AccueilComponent';
+import { Route, Routes } from 'react-router-dom';
+import {useState, useEffect} from "react";
+import {AccueilComponent} from './AccueilComponent';
+import {Login} from './Login';
+import {Register} from './Register';
+import {NavBar} from './NavBar';
 
-function App() {
+const App = () => {
+  
   return (
-    <html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+      <html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
       <head>
           <meta charset="utf-8"/>
           <link rel="stylesheet" href="style.css"/>
@@ -11,8 +17,17 @@ function App() {
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
           <title>ShareImmo</title>
       </head>
-      <AccueilComponent />
+      <body>
+        <NavBar/>
+        <Routes>
+          <Route path="/" element={<AccueilComponent/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/register" element={<Register/>} />
+        </Routes>
+      </body>
+      
     </html>
+    
   );
 }
 
