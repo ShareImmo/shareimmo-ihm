@@ -2,7 +2,7 @@ import React,{ useState } from "react";
 import { Link } from "react-router-dom";
 //import './connexion.css';
 
-export const Register = (props) => {
+export const Register = () => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [confirmPass, setConfirmPass] = useState('');
@@ -26,36 +26,36 @@ export const Register = (props) => {
                 <form className="register-form" onSubmit={submit}>
                     <div style={{ display: 'flex', gap: '10px' }}>
                         <div>
-                            <label htmlFor="nom">Nom&nbsp;</label>&nbsp;&nbsp;
-                            <input type="text" value={nom} placeholder="Nom" id="nom" name="nom" required/>
+                            <label htmlFor="nom">Nom</label>
+                            <input type="text" value={nom} onChange={(e)=> setNom(e.target.value)} placeholder="Nom" id="nom" name="nom" required/>
                         </div>
 
                         <div>
                             <label htmlFor="prenom">Prénom</label>&nbsp;&nbsp;
-                            <input type="text" value={prenom} placeholder="Prénom" id="prenom" name="prenom" required/>
+                            <input type="text" value={prenom} onChange={(e)=> setPrenom(e.target.value)} placeholder="Prénom" id="prenom" name="prenom" required/>
                         </div>
                     </div>
-                    <label htmlfor="telephone">Téléphone</label>
-                    <input type="text" value={telephone} placeholder="Téléphone" id="telephone" name="telephone"></input>
+                    <label htmlFor="telephone">Téléphone</label>
+                    <input type="text" value={telephone} onChange={(e)=> setTelephone(e.target.value)} placeholder="Téléphone" id="telephone" name="telephone"></input>
 
-                    <label htmlfor="email">Adresse mail</label>
+                    <label htmlFor="email">Adresse mail</label>
                     <input type="email" value={email} onChange={(e)=> setEmail(e.target.value)} placeholder="email@gmail.com" id="email" name="email" required></input>
 
-                    <label htmlfor="password">Mot de passe</label>
+                    <label htmlFor="password">Mot de passe</label>
                     <input type="password" value={pass} onChange={(e)=> setPass(e.target.value)} placeholder="********" id="password" name="password" required></input>
                     
-                    <label htmlfor="confirmPass">Confirmer le mot de passe</label>
-                    <input type="password" value={confirmPass} placeholder="********" id="confirmPass" name="confirmPass" required></input>
+                    <label htmlFor="confirmPass">Confirmer le mot de passe</label>
+                    <input type="password" value={confirmPass} onChange={(e)=> setConfirmPass(e.target.value)} placeholder="********" id="confirmPass" name="confirmPass" required></input>
                     <br />
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required></input>
-                        <label class="form-check-label" htmlfor="flexCheckDefault">
+                    <div className="form-check">
+                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" required></input>
+                        <label className="form-check-label" htmlFor="flexCheckDefault">
                             &nbsp;&nbsp;J'accepte les CGU *
                         </label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required></input>
-                        <label class="form-check-label" htmlfor="flexCheckDefault">
+                    <div className="form-check">
+                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" required></input>
+                        <label className="form-check-label" htmlFor="flexCheckDefault">
                         &nbsp;&nbsp;J'ai conscience que l'investissement comporte des risques *
                         </label>
                     </div>

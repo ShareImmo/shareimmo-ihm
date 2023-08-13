@@ -1,0 +1,63 @@
+.App-div-bien {
+    text-align: center;
+    display: flex;
+    color: white;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 2% 0% 2% 0%;
+}
+
+.bien-form-container, .bien-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #324393;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .bien-form-container {
+      padding: 3rem;
+      border: 1px solid #ff5757;
+      border-radius: 10px;
+      margin: 0.5rem;
+      width: 60%;
+    }  
+  }
+  .bien-form-container {
+    padding: 3rem;
+    border: 1px solid #ff5757;
+    border-radius: 10px;
+    margin: 0.5rem;
+  }
+  
+  label {
+    text-align: left;
+    padding: 0.25rem 0;
+    font-size: large;
+  }
+  
+  input{
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    background-color: white;
+    color: #324393;
+  }
+  
+  button {
+    border: none;
+    background-color: #ff5757;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #324393;
+    font-weight: bold;
+  }
+  
+  .link-btn {
+    background: none;
+    color: #ff5757;
+    text-decoration: underline;
+  }

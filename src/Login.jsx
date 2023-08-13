@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import './connexion.css';
 import { Link } from "react-router-dom";
 
-export const Login = (props) => {
+export const Login = () => {
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
 
@@ -18,10 +18,10 @@ export const Login = (props) => {
             <div className="auth-form-container">
                 <h2>Se connecter</h2>
                 <form className="login-form" onSubmit={submit}>
-                    <label for="email">Adresse mail</label>
+                    <label htmlFor="email">Adresse mail</label>
                     <input type="email" value={email} onChange={(e)=> setEmail(e.target.value)} placeholder="email@gmail.com" id="email" name="email"></input>
 
-                    <label for="mdp">Mot de passe</label>
+                    <label htmlFor="mdp">Mot de passe</label>
                     <input type="password" value={pass} onChange={(e)=> setPass(e.target.value)} placeholder="********" id="password" name="password"></input>
                     <br/>
                     <button style={btnStyle}>Se connecter</button>
