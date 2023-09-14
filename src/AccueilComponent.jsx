@@ -117,8 +117,7 @@ export const AccueilComponent = () => {
   };
 
   const combinedStyles = { ...LinkStyle, ...colorWhite};
-  return (
-    
+  return (  
       <div>
         <br/>
         <br/>
@@ -249,12 +248,6 @@ export const AccueilComponent = () => {
             <br/>
           </div>
         </div>
-        <br/><br/><br/><br/>
-        <footer style={footerStyle}>
-          <p  style={footerpStyle}>
-            © 2023 ShareImmo
-          </p>
-        </footer>
       </div>
   );
 };

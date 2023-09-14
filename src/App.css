@@ -2,4 +2,31 @@
   text-align: center;
 }
 
+.image-link {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
 
+.grid-container {
+    display: flex;
+    grid-column: auto auto auto auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+    margin: 0% 5% 0% 5%;
+}
+
+.grid-item {
+    flex: 1;
+    max-width: 18rem; 
+    margin: 0 auto; 
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .grid-item {
+        max-width: 100%;
+    }
+}

@@ -2,13 +2,9 @@ import React from 'react';
 import './accueil.css';
 import { Link } from 'react-router-dom';
 import resizedS from './images/resizedS.png';
-import back1 from './images/back1.png';
-import choix from './images/choix.png';
-import down from './images/down.png';
-import euro from './images/euro.png';
-import increase from './images/increase.png';
-import invSeul from './images/invSeul.png';
-import up2 from './images/up2.png';
+import wallet from './images/wallet.png';
+import notif from './images/notif.png';
+import info from './images/info.png';
 
 
 
@@ -118,26 +114,45 @@ export const NavBar = () => {
 
   const combinedStyles = { ...LinkStyle, ...colorWhite};
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <div>
+      <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-        <Link className="navbar-brand" to="/"><img style={navbarBrandStyle} src={resizedS} alt="Logo ShareImmo"/></Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-            <a className="nav-link active" aria-current="page" href="#">Nos projets</a>
-            <a className="nav-link" href="#">Notre modèle</a>
-            <a className="nav-link" href="#">ShareImmo Blog.</a>
-            <a className="nav-link" href="#">À propos</a>
-            <a className="nav-link" href="#">Contact</a>
-            <a className="nav-link" href="#">FAQ.</a>
-            </div>
+          <Link className="navbar-brand" to="/"><img style={navbarBrandStyle} src={resizedS} alt="Logo ShareImmo"/></Link>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div className="navbar-nav">
+                <Link to="/projects" className="nav-link active" aria-current="page">Nos projets</Link>
+                <a className="nav-link" href="#">Notre modèle</a>
+                <a className="nav-link" href="#">ShareImmo Blog.</a>
+                <Link className="nav-link" to="/apropos">À propos</Link>
+                <a className="nav-link" href="#">Contact</a>
+                <a className="nav-link" href="#">FAQ.</a>
+              </div>
+            {/*
+              <div>
+                  <p class="colored-ff5757 align-items-center" style={{marginTop: '1%'}}><strong>50,00 €</strong></p>
+                  &nbsp;&nbsp;
+                  <a class="image-link" href="#" style={{marginRight: '1%'}}>
+                    <img src={wallet} alt="wallet" />
+                  </a>
+                  <a class="image-link" href="#" style={{marginRight: '1%'}}>
+                    <img src={info} alt="informations" />
+                  </a>
+                  <a class="image-link" href="#" style={{marginRight: '7%'}}>
+                    <img src={notif} alt="notifications" />
+                  </a>
+              </div>
+            */}
+          </div>
+          <div>
+            <button type="button" className="btn btn-custom" style={buttonStyle}><Link style={{textDecoration:'none', color: '#ff5757'}} className="colored-ff5757" to="/register">Inscription</Link></button>
+            <button type="button" className="btn btn-primary" id="cnx"><Link style={combinedStyles} to="/login">Connexion</Link></button>
+          </div>
         </div>
-        <button type="button" className="btn btn-custom" style={buttonStyle}><Link style={LinkStyle} className="colored-ff5757" to="/register">Inscription</Link></button>
-        <button type="button" className="btn btn-primary" id="cnx"><Link style={combinedStyles} to="/login">Connexion</Link></button>
-        </div>
-    </nav>
-        
+      </nav>
+      <br/>
+    </div>     
   );
 };

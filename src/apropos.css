@@ -1,0 +1,31 @@
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.navbar {
+    background-color: #324393;
+}
+.navbar a {
+    color: #ffffff;
+}
+h1, h2{
+    color: #324393;
+}
+.btn-primary {
+    background-color: #324393;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #1a2b61;
+}
+.btn-danger {
+    background-color: #ff5757;
+    border: none;
+}
+.btn-danger:hover {
+    background-color: #d62c2c;
+}

@@ -1,0 +1,31 @@
+/* Custom Primary and Secondary Colors */
+:root {
+    --primary-color: #ff5757;
+    --secondary-color: #324393;
+}
+
+/* Body Styles */
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styles */
+.container h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Section Styles */
+h2 {
+    color: #324393;
+    margin-top: 30px;
+}
+
+/* Link Styles */
+a {
+    color: var(--primary-color);
+}
