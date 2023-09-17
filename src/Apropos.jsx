@@ -2,21 +2,21 @@ import React from 'react';
 import './apropos.css';
 import { Link } from 'react-router-dom';
 import resizedS from './images/resizedS.png';
-import wallet from './images/wallet.png';
-import notif from './images/notif.png';
+// import wallet from './images/wallet.png';
+// import notif from './images/notif.png';
 import bg1 from './images/bg1.png';
 
 
 
 export const Apropos = () => {
   
-  const LinkStyle = {
-    textDecoration: 'none',
-  }
+//   const LinkStyle = {
+//     textDecoration: 'none',
+//   }
 
-  const colorWhite = {
-    color: 'white',
-  };
+//   const colorWhite = {
+//     color: 'white',
+//   };
 
   return (
     <div className='d'>

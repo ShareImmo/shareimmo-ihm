@@ -1,6 +1,5 @@
 import React from 'react';
 import './accueil.css';
-import { Link } from 'react-router-dom';
 import resizedS from './images/resizedS.png';
 import back1 from './images/back1.png';
 import choix from './images/choix.png';
@@ -13,20 +12,7 @@ import up2 from './images/up2.png';
 
 
 export const AccueilComponent = () => {
-  const navbarBrandStyle = {
-    width: '200px',
-    marginLeft: '10%',
-  };
 
-  const buttonStyle = {
-    color: '#ff5757',
-    backgroundColor: 'white',
-    borderColor: '#ff5757',
-  };
-
-  const LinkStyle = {
-    textDecoration: 'none',
-  }
 
   const textCenterStyle = {
     textAlign: 'center',
@@ -96,27 +82,12 @@ export const AccueilComponent = () => {
     width: '70%',
   };
 
-  const footerStyle = {
-    backgroundColor: '#324393',
-    height: '50px',
-    width: '100%',
-    marginBottom: '0px',
-  };
-
-  const footerpStyle = {
-    float: 'right',
-    marginRight: '10%',
-    color: 'white',
-    marginTop: '11px',
-  };
-
   const btnModele = {
     backgroundColor: '#ff5757',
     border: '#ff5757',
     padding: '2%',
   };
 
-  const combinedStyles = { ...LinkStyle, ...colorWhite};
   return (  
       <div>
         <br/>

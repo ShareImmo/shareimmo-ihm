@@ -1,14 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import './App.css';
-import { Link } from "react-router-dom";
-import { NavBar } from "./NavBar";
 import appar from './images/app.jpg';
 
 export const Projects = () => {
-
-    const btnStyle = {
-        borderRadius: '10px',
-    }
 
     return (
         <div>
@@ -58,7 +52,7 @@ export const Projects = () => {
                                 <div class="progress-bar" role="progressbar" style={{width: '25%'}} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">financement 25%</div>
                             </div>
                             <br />
-                            <a href="#" class="btn btn-primary" id="cnx">Participer au projet !</a>
+                            <a href="/" class="btn btn-primary" id="cnx">Participer au projet !</a>
                         </div>
                     </div>
                 </div>
@@ -74,7 +68,7 @@ export const Projects = () => {
                                 <div class="progress-bar" role="progressbar" style={{width: '25%'}} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">financement 25%</div>
                             </div>
                             <br />
-                            <a href="#" class="btn btn-primary" id="cnx">Participer au projet !</a>
+                            <a href="/" class="btn btn-primary" id="cnx">Participer au projet !</a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +84,7 @@ export const Projects = () => {
                                 <div class="progress-bar" role="progressbar" style={{width: '25%'}} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">financement 25%</div>
                             </div>
                             <br />
-                            <a href="#" class="btn btn-primary" id="cnx">Participer au projet !</a>
+                            <a href="/" class="btn btn-primary" id="cnx">Participer au projet !</a>
                         </div>
                     </div>
                 </div>
@@ -106,7 +100,7 @@ export const Projects = () => {
                                 <div class="progress-bar" role="progressbar" style={{width: '25%'}} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">financement 25%</div>
                             </div>
                             <br />
-                            <a href="#" class="btn btn-primary" id="cnx">Participer au projet !</a>
+                            <a href="/" class="btn btn-primary" id="cnx">Participer au projet !</a>
                         </div>
                     </div>
                 </div>
@@ -122,7 +116,7 @@ export const Projects = () => {
                                 <div class="progress-bar" role="progressbar" style={{width: '25%'}} aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">financement 25%</div>
                             </div>
                             <br />
-                            <a href="#" class="btn btn-primary" id="cnx">Participer au projet !</a>
+                            <a href="/" class="btn btn-primary" id="cnx">Participer au projet !</a>
                         </div>
                     </div>
                 </div>

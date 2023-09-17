@@ -1,9 +1,9 @@
-import React,{ useState, useEffect, useRef } from "react";
+import React,{ useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
-const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
+// const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
+// const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
 export const Register = () => {
 

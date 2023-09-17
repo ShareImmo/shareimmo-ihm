@@ -2,9 +2,6 @@ import React from 'react';
 import './accueil.css';
 import { Link } from 'react-router-dom';
 import resizedS from './images/resizedS.png';
-import wallet from './images/wallet.png';
-import notif from './images/notif.png';
-import info from './images/info.png';
 
 
 
@@ -46,8 +43,8 @@ export const Footer = () => {
                 </div>
                 <div class="col-md-4">
                     <ul class="list-unstyled" >
-                        <li ><a href="#" class="shadow" style={btnModele}>About Us</a></li>
-                        <li><a href="#" class="shadow" style={btnModele}>Contact Us</a></li>
+                        <li ><a href="/" class="shadow" style={btnModele}>About Us</a></li>
+                        <li><a href="/" class="shadow" style={btnModele}>Contact Us</a></li>
                         <li><Link to="/cgu" class="shadow" style={btnModele}>CGU</Link></li>
                     </ul>
                 </div>

@@ -1,6 +1,5 @@
 import './accueil.css';
 import { Route, Routes } from 'react-router-dom';
-import {useState, useEffect} from "react";
 import {AccueilComponent} from './AccueilComponent';
 import {Login} from './Login';
 import {Register} from './Register.jsx';
@@ -11,6 +10,7 @@ import {Projects} from './projects';
 import {CGUPage} from './cguPage';
 import { Footer } from './Footer';
 import { Apropos } from './Apropos';
+import {Profile} from './Profile';
 
 const App = () => {
   
@@ -26,6 +26,7 @@ const App = () => {
           <Route path="/creationBien" element={<CreationBien/>} />
           <Route path="/descriptionBien" element={<DescriptionBien/>} />
           <Route path="/projects" element={<Projects/>} />
+		  <Route path="/profile" element={<Profile/>} />
         </Routes>
         <Footer/>
       </>

@@ -2,9 +2,7 @@ import React from 'react';
 import './accueil.css';
 import { Link } from 'react-router-dom';
 import resizedS from './images/resizedS.png';
-import wallet from './images/wallet.png';
-import notif from './images/notif.png';
-import info from './images/info.png';
+
 
 
 
@@ -24,92 +22,8 @@ export const NavBar = () => {
     textDecoration: 'none',
   }
 
-  const textCenterStyle = {
-    textAlign: 'center',
-  };
-
-  const colorff5757 = {
-    color: '#ff5757',
-  };
-
   const colorWhite = {
     color: 'white',
-  };
-
-  const color324393 = {
-    color: '#324393',
-  };
-
-  const width3 = {
-    width: '3%',
-  };
-
-  const width10 = {
-    width: '10%',
-  };
-
-  const padding4 = {
-    padding: '4%',
-  };
-
-  const width90 = {
-    width: '90%',
-  };
-
-  const btnCompteStyle = {
-    float: 'right',
-    width: '40%',
-    padding: '1%',
-    marginRight: '1%'
-  };
-
-  const btnDemoStyle = {
-    color: '#ff5757', 
-    backgroundColor: 'white',
-    borderColor: '#ff5757',
-    width: '40%',
-    padding: '1%'
-  };
-
-  const logo2 = {
-    width: '50%',
-    margin: '5% 5% 5% 25%',
-  };
-
-  const imgInv = {
-    width: '50%',
-    margin: '5% 5% 5% 20%',
-  };
-
-  const divShadow = {
-    backgroundColor: '#324393',
-    height: '10%',
-    padding: '0% 15% 0% 15%',
-  };
-
-  const pStyle = {
-    color: 'white',
-    width: '70%',
-  };
-
-  const footerStyle = {
-    backgroundColor: '#324393',
-    height: '50px',
-    width: '100%',
-    marginBottom: '0px',
-  };
-
-  const footerpStyle = {
-    float: 'right',
-    marginRight: '10%',
-    color: 'white',
-    marginTop: '11px',
-  };
-
-  const btnModele = {
-    backgroundColor: '#ff5757',
-    border: '#ff5757',
-    padding: '2%',
   };
 
   const combinedStyles = { ...LinkStyle, ...colorWhite};
@@ -124,11 +38,11 @@ export const NavBar = () => {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div className="navbar-nav">
                 <Link to="/projects" className="nav-link active" aria-current="page">Nos projets</Link>
-                <a className="nav-link" href="#">Notre modèle</a>
-                <a className="nav-link" href="#">ShareImmo Blog.</a>
+                <a className="nav-link" href="/">Notre modèle</a>
+                <a className="nav-link" href="/">ShareImmo Blog.</a>
                 <Link className="nav-link" to="/apropos">À propos</Link>
-                <a className="nav-link" href="#">Contact</a>
-                <a className="nav-link" href="#">FAQ.</a>
+                <a className="nav-link" href="/">Contact</a>
+                <a className="nav-link" href="/">FAQ.</a>
               </div>
             {/*
               <div>
@@ -149,6 +63,7 @@ export const NavBar = () => {
           <div>
             <button type="button" className="btn btn-custom" style={buttonStyle}><Link style={{textDecoration:'none', color: '#ff5757'}} className="colored-ff5757" to="/register">Inscription</Link></button>
             <button type="button" className="btn btn-primary" id="cnx"><Link style={combinedStyles} to="/login">Connexion</Link></button>
+			<button type="button" className="btn btn-primary" id="cnx"><Link style={combinedStyles} to="/profile"><i className="bi bi-person-circle">Profile</i></Link></button>
           </div>
         </div>
       </nav>

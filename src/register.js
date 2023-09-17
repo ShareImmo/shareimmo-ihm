@@ -29,7 +29,7 @@ app.post('/register', (req, res) => {
   if (!nom || !prenom || !telephone || !email || !password) {
     return res.status(400).json({ message: 'All fields are required' });
   }
-  const db = connectToDatabase();
+  //const db = connectToDatabase();
 
   const insertUserQuery = 'INSERT INTO User (unser_id, nom, prenom, email, mot_de_passe, telephone, carte_identite, role, date_dernier_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)';
   const values = [1,nom, prenom, email, password, telephone, null, 'test', null];

@@ -1,30 +1,30 @@
-import React,{ useState } from "react";
+import React from "react";
 import './descriptionBien.css';
 import apprt1 from './images/app.jpg';
 import { Link } from "react-router-dom";
 
 export const DescriptionBien = () => {
-    const [nom, setNom] = useState('');
-    const [reference, setReference] = useState('');
-    const [adresse, setAdresse] = useState('');
-    const [adresseComplement, setAdresseComplement] = useState('');
-    const [ville, setVille] = useState('');
-    const [codePostal, setCodePostal] = useState('');
-    const [pays, setPays] = useState('');
-    const [description, setDescription] = useState('');
-    const [dateAchat, setdateAchat] = useState('');
-    const [superficie, setSuperficie] = useState('');
-    const [etage, setEtage] = useState('');
-    const [nbPieces, setNbPieces] = useState('');
-    const [montantAcquisition, setMontantAcquisition] = useState('');
+    // const [nom, setNom] = useState('');
+    // const [reference, setReference] = useState('');
+    // const [adresse, setAdresse] = useState('');
+    // const [adresseComplement, setAdresseComplement] = useState('');
+    // const [ville, setVille] = useState('');
+    // const [codePostal, setCodePostal] = useState('');
+    // const [pays, setPays] = useState('');
+    // const [description, setDescription] = useState('');
+    // const [dateAchat, setdateAchat] = useState('');
+    // const [superficie, setSuperficie] = useState('');
+    // const [etage, setEtage] = useState('');
+    // const [nbPieces, setNbPieces] = useState('');
+    // const [montantAcquisition, setMontantAcquisition] = useState('');
 
-    const btnStyle = {
-        borderRadius: '10px',
-    }
+    // const btnStyle = {
+    //     borderRadius: '10px',
+    // }
 
-    const submit = (e) => {
-        e.preveventDefault();
-    }
+    // const submit = (e) => {
+    //     e.preveventDefault();
+    // }
     
     return (
         <div className="bienDiv">     

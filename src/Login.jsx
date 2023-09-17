@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import './connexion.css';
 import { Link } from "react-router-dom";
-import Navbar from './NavBar';
 
 export const Login = () => {
     const [email, setEmail] = useState('');
