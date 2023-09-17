@@ -1,3 +1,4 @@
+import React from 'react';
 import './accueil.css';
 import { Route, Routes } from 'react-router-dom';
 import {useState, useEffect} from "react";
@@ -11,6 +12,7 @@ import {Projects} from './projects';
 import {CGUPage} from './cguPage';
 import { Footer } from './Footer';
 import { Apropos } from './Apropos';
+import { Contact } from './Contact';
 
 const App = () => {
   
@@ -23,6 +25,7 @@ const App = () => {
           <Route path="/register" element={<Register/>} />
           <Route path="/cgu" element={<CGUPage/>} />
           <Route path="/apropos" element={<Apropos/>} />
+          <Route path="/contact" element={<Contact/>} />
           <Route path="/creationBien" element={<CreationBien/>} />
           <Route path="/descriptionBien" element={<DescriptionBien/>} />
           <Route path="/projects" element={<Projects/>} />
