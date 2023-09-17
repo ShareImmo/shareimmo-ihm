@@ -1,3 +1,4 @@
+import React from 'react';
 import './accueil.css';
 import { Route, Routes } from 'react-router-dom';
 import {AccueilComponent} from './AccueilComponent';
@@ -10,7 +11,9 @@ import {Projects} from './projects';
 import {CGUPage} from './cguPage';
 import { Footer } from './Footer';
 import { Apropos } from './Apropos';
-import {Profile} from './Profile';
+import { Profile } from './Profile';
+import { Contact } from './Contact';
+import ShareImmoBlog from './ShareImmoBlog';
 
 const App = () => {
   
@@ -23,10 +26,12 @@ const App = () => {
           <Route path="/register" element={<Register/>} />
           <Route path="/cgu" element={<CGUPage/>} />
           <Route path="/apropos" element={<Apropos/>} />
+          <Route path="/contact" element={<Contact/>} />
           <Route path="/creationBien" element={<CreationBien/>} />
           <Route path="/descriptionBien" element={<DescriptionBien/>} />
           <Route path="/projects" element={<Projects/>} />
 		  <Route path="/profile" element={<Profile/>} />
+		  <Route path="/blog" element={<ShareImmoBlog/>} />
         </Routes>
         <Footer/>
       </>

@@ -36,14 +36,14 @@ export const NavBar = () => {
               <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div className="navbar-nav">
-                <Link to="/projects" className="nav-link active" aria-current="page">Nos projets</Link>
-                <a className="nav-link" href="/">Notre modèle</a>
-                <a className="nav-link" href="/">ShareImmo Blog.</a>
-                <Link className="nav-link" to="/apropos">À propos</Link>
-                <a className="nav-link" href="/">Contact</a>
-                <a className="nav-link" href="/">FAQ.</a>
-              </div>
+            <div className="navbar-nav">
+              <Link to="/projects" className="nav-link active" aria-current="page">Nos projets</Link>
+              <Link to="/modele" className="nav-link" >Notre modèle</Link>
+              <Link className="nav-link" to="/blog">ShareImmo Blog.</Link>
+              <Link className="nav-link" to="/apropos">À propos</Link>
+              <Link className="nav-link" to="/contact">Contact</Link>
+              <Link className="nav-link" to="/faq">FAQ.</Link>
+            </div>
             {/*
               <div>
                   <p class="colored-ff5757 align-items-center" style={{marginTop: '1%'}}><strong>50,00 €</strong></p>
@@ -60,10 +60,12 @@ export const NavBar = () => {
               </div>
             */}
           </div>
-          <div>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
             <button type="button" className="btn btn-custom" style={buttonStyle}><Link style={{textDecoration:'none', color: '#ff5757'}} className="colored-ff5757" to="/register">Inscription</Link></button>
+            &nbsp;&nbsp;&nbsp;
             <button type="button" className="btn btn-primary" id="cnx"><Link style={combinedStyles} to="/login">Connexion</Link></button>
 			<button type="button" className="btn btn-primary" id="cnx"><Link style={combinedStyles} to="/profile"><i className="bi bi-person-circle">Profile</i></Link></button>
+            &nbsp;&nbsp;&nbsp;
           </div>
         </div>
       </nav>

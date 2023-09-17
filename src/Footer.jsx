@@ -32,23 +32,23 @@ export const Footer = () => {
     <div>
       <br/><br/>
       <footer style={footerStyle}>
-        <div class="containerd text-center">
-            <div class="row" style={{width: '80%', margin: '0 auto'}}>
-                <div class="col-md-4">
+        <div className="containerd text-center">
+            <div className="row" style={{width: '80%', margin: '0 auto'}}>
+                <div className="col-md-4">
                     <img src={resizedS} alt="Company Logo" width="100" style={{marginBottom:'10px'}} />
                     <p style={{color: 'white', fontSize: 'bold'}}>ShareImmo est une plateforme d’investissement dans l’immobilier tokenisé en France. 
                       Elle est basée sur la blockchain pour fluidifier les échanges et les transactions. 
                       Une nouvelle façon d’investir de manière simple, peu coûteuse et décentralisée, 
                       ouvrant l’investissement immobilier à un public beaucoup plus large.</p>
                 </div>
-                <div class="col-md-4">
-                    <ul class="list-unstyled" >
-                        <li ><a href="/" class="shadow" style={btnModele}>About Us</a></li>
-                        <li><a href="/" class="shadow" style={btnModele}>Contact Us</a></li>
-                        <li><Link to="/cgu" class="shadow" style={btnModele}>CGU</Link></li>
+                <div className="col-md-4">
+                <ul className="list-unstyled" >
+                        <li ><Link to="/apropos" className="shadow" style={btnModele}>A propos</Link></li>
+                        <li><Link to="/contact" className="shadow" style={btnModele}>Nous contacter</Link></li>
+                        <li><Link to="/cgu" className="shadow" style={btnModele}>CGU</Link></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div className="col-md-4">
                   <p  style={footerpStyle}>
                     © 2023 ShareImmo
                   </p>

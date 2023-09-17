@@ -1,9 +1,9 @@
 import React from 'react';
 import './apropos.css';
 import { Link } from 'react-router-dom';
-import resizedS from './images/resizedS.png';
+// import resizedS from './images/resizedS.png';
 // import wallet from './images/wallet.png';
-// import notif from './images/notif.png';
+import bigLogo from './images/bigLogo.png';
 import bg1 from './images/bg1.png';
 
 
@@ -24,9 +24,9 @@ export const Apropos = () => {
         <h1 class="mx-auto text-center" style={{color: 'white'}}><strong>A Propos</strong></h1>
         </nav>
 
-        <div className="container">
+        <div className="container" style={{width: '70%'}}>
             <br/>
-            <img src={resizedS} alt="logo" style={{display: 'block', margin: '0 auto', width: '40%'}} />
+            <img src={bigLogo} alt="logo" style={{display: 'block', margin: '0 auto', width: '40%'}} />
             <br/><br/>
             <div style={{width: '85%', textAlign: 'justify', alignItems:'center', justifyContent: 'center',  margin: '0 auto'}}>
                 <p>Nous sommes une équipe passionnée dédiée à la création d'une plateforme innovante dans le domaine de l'immobilier. 
