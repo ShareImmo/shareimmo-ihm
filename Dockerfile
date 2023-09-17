@@ -13,7 +13,4 @@ RUN npm install --silent
 # COPY client directory folder
 COPY . .
 
-# default command
-RUN npm run build
-
 CMD ["npm", "run", "start"]
