@@ -21,7 +21,8 @@
 .grid-item {
     flex: 1;
     max-width: 18rem; 
-    margin: 0 auto; 
+    height: 40rem;
+    margin: 0 15px; 
 }
 
 /* Add media queries for responsiveness */

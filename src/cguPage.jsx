@@ -1,6 +1,6 @@
 import React from 'react';
 import bg1 from './images/bg1.png';
-//import './cgu.css';
+import './apropos.css';
 export const CGUPage = () => {
     return (
         <div class="d">
@@ -135,12 +135,12 @@ export const CGUPage = () => {
             <span style={{textDecoration: 'underline', color: '#ff5757'}}><strong>Données collectées</strong></span>
             <p>Les données à caractère personnel qui sont collectées sur ce site sont les suivantes :</p>
             <ul>
-                <li><strong>Ouverture de compte :</strong> lors de la création du compte de l'utilisateur : nom ; prénom ; adresse électronique ; n° de téléphone; adresse postale; photographie, pièce d'identité et informations bancaires seront traitées par notre prestataire de paiement.</li>
-                <li><strong>Connexion :</strong> lors de la connexion de l'utilisateur au site web, celui-ci enregistre, notamment, ses nom, prénom, données de connexion, d'utilisation, de localisation et ses données relatives au paiement ;</li>
-                <li><strong>Profil :</strong> l'utilisation des prestations prévues sur le site web permet de renseigner un profil, pouvant comprendre une adresse et un numéro de téléphone ;</li>
-                <li><strong>Paiement :</strong> dans le cadre du paiement des produits et prestations proposés sur le site web, celui-ci enregistre des données financières relatives au compte bancaire ou à la carte de crédit de l'utilisateur ;</li>
-                <li><strong>Communication :</strong> lorsque le site web est utilisé pour communiquer avec d'autres membres, les données concernant les communications de l'utilisateur font l'objet d'une conservation temporaire ;</li>
-                <li><strong>Cookies :</strong> les cookies sont appliqués dans le cadre de l'utilisation du site. L'utilisateur a la possibilité de désactiver les cookies à partir des paramètres de son navigateur.</li>
+                <li><strong style={{color: '#424393'}}>Ouverture de compte :</strong> lors de la création du compte de l'utilisateur : nom ; prénom ; adresse électronique ; n° de téléphone; adresse postale; photographie, pièce d'identité et informations bancaires seront traitées par notre prestataire de paiement.</li>
+                <li><strong style={{color: '#424393'}}>Connexion :</strong> lors de la connexion de l'utilisateur au site web, celui-ci enregistre, notamment, ses nom, prénom, données de connexion, d'utilisation, de localisation et ses données relatives au paiement ;</li>
+                <li><strong style={{color: '#424393'}}>Profil :</strong> l'utilisation des prestations prévues sur le site web permet de renseigner un profil, pouvant comprendre une adresse et un numéro de téléphone ;</li>
+                <li><strong style={{color: '#424393'}}>Paiement :</strong> dans le cadre du paiement des produits et prestations proposés sur le site web, celui-ci enregistre des données financières relatives au compte bancaire ou à la carte de crédit de l'utilisateur ;</li>
+                <li><strong style={{color: '#424393'}}>Communication :</strong> lorsque le site web est utilisé pour communiquer avec d'autres membres, les données concernant les communications de l'utilisateur font l'objet d'une conservation temporaire ;</li>
+                <li><strong style={{color: '#424393'}}>Cookies :</strong> les cookies sont appliqués dans le cadre de l'utilisation du site. L'utilisateur a la possibilité de désactiver les cookies à partir des paramètres de son navigateur.</li>
             </ul>
             <span style={{textDecoration: 'underline', color: '#ff5757'}}><strong>Utilisation des données personnelles</strong></span>
             <p>Les données personnelles collectées auprès des utilisateurs ont pour objectif la mise à disposition des services du site web, leur amélioration et le maintien d'un environnement sécurisé. Plus précisément, les utilisations sont les suivantes :</p>
@@ -173,12 +173,12 @@ export const CGUPage = () => {
             <span style={{textDecoration: 'underline', color: '#ff5757'}}><strong>Mise en œuvre des droits des utilisateurs</strong></span>
             <p>En application de la réglementation applicable aux données à caractère personnel, les utilisateurs disposent des droits suivants, qu'ils peuvent exercer en faisant leur demande à l'adresse suivante : contact@shareimmo.com</p>
             <ul>
-                <li><strong>Le droit d'accès :</strong> ils peuvent exercer leur droit d'accès, pour connaître les données personnelles les concernant. Dans ce cas, avant la mise en œuvre de ce droit, le site web peut demander une preuve de l'identité de l'utilisateur afin d'en vérifier l'exactitude.</li>
-                <li><strong>Le droit de rectification :</strong> si les données à caractère personnel détenues par le site web sont inexactes, ils peuvent demander la mise à jour des informations.</li>
-                <li><strong>Le droit de suppression des données :</strong> les utilisateurs peuvent demander la suppression de leurs données à caractère personnel conformément aux lois applicables en matière de protection des données.</li>
-                <li><strong>Le droit à la limitation du traitement :</strong> les utilisateurs peuvent demander au site web de limiter le traitement des données personnelles conformément aux hypothèses prévues par le RGPD.</li>
-                <li><strong>Le droit de s'opposer au traitement des données :</strong> les utilisateurs peuvent s'opposer à ce que leurs données soient traitées conformément aux hypothèses prévues par le RGPD.</li>
-                <li><strong>Le droit à la portabilité :</strong> ils peuvent réclamer que le site web leur remette les données personnelles qui lui sont fournies pour les transmettre à un nouveau site web.</li>
+                <li><strong style={{color: '#424393'}}>Le droit d'accès :</strong> ils peuvent exercer leur droit d'accès, pour connaître les données personnelles les concernant. Dans ce cas, avant la mise en œuvre de ce droit, le site web peut demander une preuve de l'identité de l'utilisateur afin d'en vérifier l'exactitude.</li>
+                <li><strong style={{color: '#424393'}}>Le droit de rectification :</strong> si les données à caractère personnel détenues par le site web sont inexactes, ils peuvent demander la mise à jour des informations.</li>
+                <li><strong style={{color: '#424393'}}>Le droit de suppression des données :</strong> les utilisateurs peuvent demander la suppression de leurs données à caractère personnel conformément aux lois applicables en matière de protection des données.</li>
+                <li><strong style={{color: '#424393'}}>Le droit à la limitation du traitement :</strong> les utilisateurs peuvent demander au site web de limiter le traitement des données personnelles conformément aux hypothèses prévues par le RGPD.</li>
+                <li><strong style={{color: '#424393'}}>Le droit de s'opposer au traitement des données :</strong> les utilisateurs peuvent s'opposer à ce que leurs données soient traitées conformément aux hypothèses prévues par le RGPD.</li>
+                <li><strong style={{color: '#424393'}}>Le droit à la portabilité :</strong> ils peuvent réclamer que le site web leur remette les données personnelles qui lui sont fournies pour les transmettre à un nouveau site web.</li>
             </ul>
             <span style={{textDecoration: 'underline', color: '#ff5757'}}><strong>Évolution de la présente clause</strong></span>
             <p>Le site web se réserve le droit d'apporter toute modification à la présente clause relative à la protection des données à caractère personnel à tout moment. Si une modification est apportée à la présente clause de protection des données à caractère personnel, le site web s'engage à publier la nouvelle version sur son site. Le site web informera également les utilisateurs de la modification par messagerie électronique, dans un délai minimum de 15 jours avant la date d'effet. Si l'utilisateur n'est pas d'accord avec les termes de la nouvelle rédaction de la clause de protection des données à caractère personnel. Il a la possibilité de supprimer son compte.</p>

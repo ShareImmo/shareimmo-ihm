@@ -2,17 +2,17 @@ import React from 'react';
 import './accueil.css';
 import { Link } from 'react-router-dom';
 import resizedS from './images/resizedS.png';
-import wallet from './images/wallet.png';
-import notif from './images/notif.png';
-import info from './images/info.png';
-
+import youtube from './images/youtube.png';
+import instagram from './images/instagram.png';
+import linkedin from './images/linkedin.png';
+import x from './images/x.png';
 
 
 export const Footer = () => {
 
   const footerStyle = {
     backgroundColor: '#324393',
-    height: '240px',
+    height: 'auto',
     width: '100%',
     marginBottom: '0px',
     paddingTop: '10px',
@@ -33,27 +33,37 @@ export const Footer = () => {
 
   return (
     <div>
-      <br/><br/>
       <footer style={footerStyle}>
         <div className="containerd text-center">
             <div className="row" style={{width: '80%', margin: '0 auto'}}>
                 <div className="col-md-4">
-                    <img src={resizedS} alt="Company Logo" width="100" style={{marginBottom:'10px'}} />
+                    <img src={resizedS} alt="Company Logo" style={{marginBottom:'10px', height:'50px', width:'200px'}} />
                     <p style={{color: 'white', fontSize: 'bold'}}>ShareImmo est une plateforme d’investissement dans l’immobilier tokenisé en France. 
                       Elle est basée sur la blockchain pour fluidifier les échanges et les transactions. 
                       Une nouvelle façon d’investir de manière simple, peu coûteuse et décentralisée, 
                       ouvrant l’investissement immobilier à un public beaucoup plus large.</p>
                 </div>
                 <div className="col-md-4">
+                  <br/><br/>
                 <ul className="list-unstyled" >
                         <li ><Link to="/apropos" className="shadow" style={btnModele}>A propos</Link></li>
                         <li><Link to="/contact" className="shadow" style={btnModele}>Nous contacter</Link></li>
                         <li><Link to="/cgu" className="shadow" style={btnModele}>CGU</Link></li>
+                        <li><Link to="/blog" className="shadow" style={btnModele}>ShareImmo Blog.</Link></li>
                     </ul>
                 </div>
                 <div className="col-md-4">
+                  <br/>
+                  <br/>
+                  <p style={footerpStyle}>
+                    &nbsp;&nbsp;
+                    <img src={instagram} style={{width:'40px'}}/>
+                    <img src={youtube} style={{width:'100px'}}/>
+                    <img src={linkedin} style={{width:'40px'}}/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src={x} style={{width:'40px'}}/>
+                  </p>
                   <p  style={footerpStyle}>
-                    © 2023 ShareImmo
+                    © 2023 ShareImmo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   </p>
                 </div>
             </div>

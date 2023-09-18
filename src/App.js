@@ -39,8 +39,7 @@ const App = () => {
 		      <Route path="/blog" element={<ShareImmoBlog/>} />
         </Routes>
         <Footer/>
-      </>
-            
+      </>   
   );
 }
 

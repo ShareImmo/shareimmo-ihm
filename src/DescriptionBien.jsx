@@ -1,6 +1,7 @@
 import React,{ useState } from "react";
 import './descriptionBien.css';
-import apprt1 from './images/app.jpg';
+import apprt1 from './images/app.png';
+import detailsIcone from './images/detailsIcone.png';
 import { Link } from "react-router-dom";
 
 export const DescriptionBien = () => {
@@ -27,13 +28,13 @@ export const DescriptionBien = () => {
     }
     
     return (
-        <div className="bienDiv">     
+        <div>
             <br/><br/>
-            <div className="container">
+            <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <button type="button" class="btn btn-primary" id="bien" to="/login" style={{float: 'right', width: '40%', padding: '1%',marginRight: '1%'}}> 
-                            <h5><Link to="/projects">Les biens</Link></h5>
+                        <button type="button" class="btn btn-primary" id="bien" style={{float: 'right', width: '40%', padding: '1%',marginRight: '1%'}}> 
+                            <h5><Link to="/projects" style={{textDecoration:'none', color:'white'}}>Les biens</Link></h5>
                         </button>
                     </div>
                     <div class="col-md-6">
@@ -42,9 +43,8 @@ export const DescriptionBien = () => {
                     <br />
                 </div>
             </div>
-            <br/>
             <div class="container">
-                <div class="card">
+                <div class="card" style={{backgroundColor: 'white'}}>
                     <div class="container-fliud">
                     <div class="wrapper row">
                         <div class="col-md-6">
@@ -89,7 +89,6 @@ export const DescriptionBien = () => {
                         <h4 class="price">Superficie du bien : <span>430 m²</span></h4>
                         <h4 class="price">Rentabilité brute : <span><strong>8,2 %</strong></span></h4>
                         <br/>
-                        <br/>
                         <div class="action">
                             <button class="add-to-cart btn btn-default" type="button">Participer au projet </button>
                         </div>
@@ -98,22 +97,25 @@ export const DescriptionBien = () => {
                     </div>
                 </div>
             </div>
-
             <div class="container">
-            <div class="card">
+            <div class="card" style={{backgroundColor: 'white'}}>
                 <div class="container-fliud">
                 <div class="wrapper row">
-                    <div class="card mb-3">
+                    <div class="profile1">
+                    <img src={detailsIcone} height="100" width="100" class="rounded-circle" />
+                    </div>
+                    <div class="mb-3">
                     <div class="row g-0">
                         <div class="col-md-12">
                         <div class="card-body">
-                            <p class="card-text">A 50 mètres de la gare, immeuble de trois étages comprenant un local commercial libre mais pouvant être loué à 1300 euros/mois (locataire déjà trouvé si besoin), six studios, caves et petit jardin.
-                            Exploités en courte durée, les six studios rénovés permettent d'encaisser environ 50 000 euros (40 euros la nuitée et 75% de remplissage).
-                            Location meublée à l'année possible également à 500 euros/mois en moyenne pour chacun des six studios = 36 000 euros par an
-                            Taxe foncière : 2300 euros/an dont la moitié à facturer au locataire du local commercial.
+                            <p class="card-text" style={{fontSize:'18px', textAlign:'justify'}}>A <strong>50</strong> mètres de la gare, immeuble de trois étages comprenant un local commercial 
+                            libre mais pouvant être loué à <strong>1300 euros/mois</strong>, six studios, caves et petit jardin.
+                            Exploités en courte durée, les six studios rénovés permettent d'encaisser environ <strong>50 000 euros</strong> (40 euros la nuitée et 75% de remplissage).
+                            Location meublée à l'année possible également à <strong>500 euros/mois</strong> en moyenne pour chacun des six studios, ce qui correspond à <strong>36 000 euros par an</strong>
+                            <strong>Taxe foncière</strong> : <strong>2300 euros/an</strong> dont la moitié à facturer au locataire du local commercial.
                             Compteurs par étage donc les loyers s'entendent avec les charges incluses.
-                            Revenus assurés pour l'année au minimum 50 000 euros pour l'ensemble.
-                            Rendement net minimum à 7,5% en location à l'année et plus en LCD.
+                            Revenus assurés pour l'année au minimum <strong>50 000 euros</strong> pour l'ensemble.
+                            Rendement net minimum à <strong>7,5%</strong> en location à l'année et plus en LCD.
                             </p>
                         </div>
                         </div>
@@ -124,5 +126,6 @@ export const DescriptionBien = () => {
             </div>
             </div>
         </div>
+        
     )    
 }
