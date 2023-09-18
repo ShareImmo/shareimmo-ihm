@@ -1,5 +1,6 @@
 import React from 'react';
 import './accueil.css';
+import bg1 from './images/bg1.png';
 
 const ShareImmoBlog = () => {
 
@@ -25,6 +26,10 @@ const ShareImmoBlog = () => {
   };
 
   return (
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light" style={{backgroundImage: `url(${bg1})`, height: '200px', backgroundSize: 'cover', backgroundRepeat: 'repeat'}}>
+        <h1 class="mx-auto text-center" style={{color: 'white'}}><strong>ShareImmo Blog</strong></h1>
+        </nav>
     <div style={{width: '55%', textAlign: 'justify', alignItems:'center', justifyContent: 'center',  margin: '0 auto'}} className="blog-article">
       <h1 style={titleStyle}>Découvrez les Avantages Révolutionnaires de l'Immobilier Tokénisé avec ShareImmo</h1>
       
@@ -58,7 +63,7 @@ const ShareImmoBlog = () => {
 
       <h2 style={subtitleStyle}>Pourquoi ShareImmo ?</h2>
       <p style={paraStyle}>
-	  Chez ShareImmo, nous sommes passionnés par les possibilités offertes par l'immobilier tokénisé. Nous vous fournissons une plateforme simple et sécurisée pour investir dans des propriétés de qualité partout dans le monde. Avec notre expertise et notre engagement envers la transparence, nous sommes là pour vous guider à chaque étape de votre voyage d'investissement.
+	  Chez ShareImmo, nous sommes passionnés par les possibilités offertes par l'immobilier tokénisé. Nous vous fournissons une plateforme simple et sécurisée pour investir dans des propriétés de qualité partout en France. Avec notre expertise et notre engagement envers la transparence, nous sommes là pour vous guider à chaque étape de votre voyage d'investissement.
 	  </p>
 	  <p style={paraStyle}>
 	  N'attendez plus pour rejoindre cette révolution de l'investissement immobilier. Restez à l'écoute pour plus d'articles informatifs et découvrez comment ShareImmo peut vous aider à tirer le meilleur parti de l'immobilier tokénisé.
@@ -66,6 +71,7 @@ const ShareImmoBlog = () => {
 	  <br/><br/>
 	  Si vous avez des questions ou souhaitez en savoir plus, n'hésitez pas à nous contacter. Merci de nous avoir lu et à bientôt pour d'autres découvertes passionnantes dans le monde de l'immobilier tokénisé avec ShareImmo !
     </div>
+	</div>
   );
 };
 
