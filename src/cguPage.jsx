@@ -4,7 +4,6 @@ import bg1 from './images/bg1.png';
 export const CGUPage = () => {
     return (
         <div class="d">
-        <br/>
         <div class="navbar navbar-expand-lg navbar-light" style={{backgroundImage: `url(${bg1})`, height: '200px', backgroundSize: 'cover', backgroundRepeat: 'repeat'}}>
             <h1 class="mx-auto text-center" style={{color: 'white'}}><strong>Conditions Générales d'Utilisation</strong></h1>
         </div>
